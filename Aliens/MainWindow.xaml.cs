@@ -25,12 +25,30 @@ namespace Aliens
             InitializeComponent();
         }
 
-        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+      
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (e.LeftButton == MouseButtonState.Pressed)
+            Close();
+        }
+
+        private void resize_Click(object sender, RoutedEventArgs e)
+        {
+            if (WindowState==WindowState.Normal)
             {
-                DragMove();
+                WindowState = WindowState.Maximized;
             }
+            else 
+            {
+                WindowState = WindowState.Normal;
+                
+            }
+                
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
 
         }
     }

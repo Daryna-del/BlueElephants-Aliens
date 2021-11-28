@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 D:\Aliens_project\BlueElephants-Aliens\Aliens\App.xaml
-51342856860
+6-427060314
 
 14-1794336551
 192-1533232326
-MainWindow.xaml;Theme\AliensButtonTheme.xaml;View\AliensView.xaml;View\PeopleView.xaml;View\SpaceshipsView.xaml;
+MainWindow.xaml;Theme\AliensButtonTheme.xaml;Theme\CloseButtonTheme.xaml;View\AliensView.xaml;View\PeopleView.xaml;View\SpaceshipsView.xaml;
 
-False
+True
 

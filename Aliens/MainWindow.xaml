@@ -16,7 +16,7 @@
     </Window.DataContext>
 
 
-    <Border Background="#272537" CornerRadius="10" >
+    <Border Background="#272537" CornerRadius="10" x:Name="bord" >
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
@@ -66,6 +66,53 @@
 
             </StackPanel>
 
+
+
+            <StackPanel  Grid.Column="2">
+                <Grid>
+                    <Button Content="X"
+                        Height="37"
+                        Foreground="White"
+                        FontSize="40"
+                        VerticalAlignment="Top"
+                        Style="{StaticResource CloseButtonTheme}"
+                        Click="Button_Click"
+                        Width="25"
+                        HorizontalAlignment="Right"
+                        
+                        />
+
+                    <Button Content="❒"
+                        Name="resize"
+                        Height="37"
+                        Width="40"
+                        Foreground="White"
+                        FontSize="40"
+                        VerticalAlignment="Top"
+                        Style="{StaticResource CloseButtonTheme}"
+                        HorizontalAlignment="Right"
+                        Margin="0,0,25,0"
+                        Click="resize_Click"
+                        
+                        />
+
+                    <Button Content="-"
+                        
+                        Height="37"
+                        Width="40"
+                        Foreground="White"
+                        FontSize="80"
+                        VerticalAlignment="Top"
+                        Style="{StaticResource CloseButtonTheme}"
+                        HorizontalAlignment="Right"
+                        Margin="0,0,60,0"
+                        Click="Button_Click_1"
+                        
+                        />
+
+                </Grid>
+
+            </StackPanel>
 
             <ContentControl Grid.Row="1"
                             Grid.Column="1"
