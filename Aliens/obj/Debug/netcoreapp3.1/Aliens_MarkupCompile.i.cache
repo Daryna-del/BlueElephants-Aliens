@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Aliens_project\BlueElephants-Aliens\Aliens\obj\Debug\netcoreapp3.1\
+D:\Study\3 Course\Databases\Aliens_new\BlueElephants-Aliens\Aliens\obj\Debug\netcoreapp3.1\
 Aliens
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-D:\Aliens_project\BlueElephants-Aliens\Aliens\App.xaml
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
+D:\Study\3 Course\Databases\Aliens_new\BlueElephants-Aliens\Aliens\App.xaml
 6-427060314
 
-14-1794336551
-192-1533232326
+31-1024166267
+2101845557668
 MainWindow.xaml;Theme\AliensButtonTheme.xaml;Theme\CloseButtonTheme.xaml;View\AliensView.xaml;View\PeopleView.xaml;View\SpaceshipsView.xaml;
 
-True
+False
 
