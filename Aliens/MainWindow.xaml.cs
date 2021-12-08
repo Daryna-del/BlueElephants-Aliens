@@ -24,5 +24,32 @@ namespace Aliens
         {
             InitializeComponent();
         }
+
+      
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void resize_Click(object sender, RoutedEventArgs e)
+        {
+            if (WindowState==WindowState.Normal)
+            {
+                WindowState = WindowState.Maximized;
+            }
+            else 
+            {
+                WindowState = WindowState.Normal;
+                
+            }
+                
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+
+        }
     }
 }

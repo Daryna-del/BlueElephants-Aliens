@@ -2,8 +2,29 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Aliens"
+             xmlns:viewModel="clr-namespace:Aliens.ViewModel"
+             xmlns:view="clr-namespace:Aliens.View"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/AliensButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/CloseButtonTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+
+            <DataTemplate DataType="{x:Type viewModel:AliensViewModel}">
+                <view:AliensView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:PeopleViewModel}">
+                <view:PeopleView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:SpaceshipsViewModel}">
+                <view:SpaceshipsView/>
+            </DataTemplate>
+
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

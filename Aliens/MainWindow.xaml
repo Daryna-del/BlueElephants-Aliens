@@ -4,9 +4,124 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Aliens"
+        xmlns:viewModel="clr-namespace:Aliens.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="600" Width="920"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStyle="None" ResizeMode="NoResize">
 
-    </Grid>
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
+
+
+    <Border Background="#272537" CornerRadius="10" x:Name="bord" >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="AlienProject"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Margin="20,0,0,0"
+                   Foreground="White"
+                   FontSize="22"/>
+
+
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="  Aliens"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Margin="50,0,0,0"
+                             Style="{StaticResource AliensButtonTheme}"
+                             IsChecked="True"
+                             Command="{Binding AliensViewCommand }"
+                             />
+
+                <RadioButton Content="  People"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource AliensButtonTheme}"
+                             Margin="50,0,0,0"
+                             Command="{Binding PeopleViewCommand }"
+                             />
+
+                <RadioButton Content="  Spaseships"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Margin="50,0,0,0"
+                             Style="{StaticResource AliensButtonTheme}"
+                             Command="{Binding SpaseshipsViewCommand }"
+                             />
+
+            </StackPanel>
+
+
+
+            <StackPanel  Grid.Column="2">
+                <Grid>
+                    <Button Content="X"
+                        Height="37"
+                        Foreground="White"
+                        FontSize="40"
+                        VerticalAlignment="Top"
+                        Style="{StaticResource CloseButtonTheme}"
+                        Click="Button_Click"
+                        Width="25"
+                        HorizontalAlignment="Right"
+                        
+                        />
+
+                    <Button Content="❒"
+                        Name="resize"
+                        Height="37"
+                        Width="40"
+                        Foreground="White"
+                        FontSize="40"
+                        VerticalAlignment="Top"
+                        Style="{StaticResource CloseButtonTheme}"
+                        HorizontalAlignment="Right"
+                        Margin="0,0,25,0"
+                        Click="resize_Click"
+                        
+                        />
+
+                    <Button Content="-"
+                        
+                        Height="37"
+                        Width="40"
+                        Foreground="White"
+                        FontSize="80"
+                        VerticalAlignment="Top"
+                        Style="{StaticResource CloseButtonTheme}"
+                        HorizontalAlignment="Right"
+                        Margin="0,0,60,0"
+                        Click="Button_Click_1"
+                        
+                        />
+
+                </Grid>
+
+            </StackPanel>
+
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10"
+                            Content="{Binding CurrentView}"/>
+        </Grid>
+
+
+
+
+    </Border>
 </Window>

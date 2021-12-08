@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study\\3 Course\\Databases\\Aliens\\Aliens\\Aliens.csproj": {}
+    "D:\\Study\\3 Course\\Databases\\Aliens_new\\BlueElephants-Aliens\\Aliens\\Aliens.csproj": {}
   },
   "projects": {
-    "D:\\Study\\3 Course\\Databases\\Aliens\\Aliens\\Aliens.csproj": {
+    "D:\\Study\\3 Course\\Databases\\Aliens_new\\BlueElephants-Aliens\\Aliens\\Aliens.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\3 Course\\Databases\\Aliens\\Aliens\\Aliens.csproj",
+        "projectUniqueName": "D:\\Study\\3 Course\\Databases\\Aliens_new\\BlueElephants-Aliens\\Aliens\\Aliens.csproj",
         "projectName": "Aliens",
-        "projectPath": "D:\\Study\\3 Course\\Databases\\Aliens\\Aliens\\Aliens.csproj",
+        "projectPath": "D:\\Study\\3 Course\\Databases\\Aliens_new\\BlueElephants-Aliens\\Aliens\\Aliens.csproj",
         "packagesPath": "C:\\Users\\daryn\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\3 Course\\Databases\\Aliens\\Aliens\\obj\\",
+        "outputPath": "D:\\Study\\3 Course\\Databases\\Aliens_new\\BlueElephants-Aliens\\Aliens\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -45,6 +45,22 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.21, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.18, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
